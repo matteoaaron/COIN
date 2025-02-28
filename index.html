@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KIDRAUHL ($KID) - The Justin Bieber Memecoin</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background: url('https://media.gq.com/photos/56bb8a91b89407780bd7d454/16:9/w_2240,c_limit/bieber-16-9-longform.jpg') no-repeat center center fixed;
+
+            background-size: cover;
+
+            color: white;
+
+            text-align: center;
+
+        }
+
+        .container {
+
+            max-width: 800px;
+
+            margin: auto;
+
+            padding: 20px;
+
+            background: rgba(0, 0, 0, 0.7);
+
+            border-radius: 10px;
+
+        }
+
+        h1 {
+
+            font-size: 3em;
+
+            color: #ffcc00;
+
+        }
+
+        .countdown {
+
+            font-size: 1.5em;
+
+            margin: 20px 0;
+
+        }
+
+        .section {
+
+            margin: 50px 0;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 10px 20px;
+
+            background: #ffcc00;
+
+            color: black;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            border-radius: 5px;
+
+        }
+
+        .btn:hover {
+
+            background: #e6b800;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>KIDRAUHL ($KID)</h1>
+
+        <p>The Ultimate Justin Bieber Memecoin 🚀</p>
+
+       
+
+        <div class="countdown" id="countdown"></div>
+
+       
+
+        <div class="section">
+
+            <h2>What is $KID?</h2>
+
+            <p>KIDRAUHL ($KID) is a community-driven memecoin inspired by Justin Bieber's legendary journey from small-town musician to global superstar.</p>
+
+        </div>
+
+ 
+
+        <div class="section">
+
+            <h2>Tokenomics</h2>
+
+            <p>🚀 1,000,000,000 Total Supply <br>🔥 50% Burned <br>💎 30% Liquidity <br>🎤 20% Community & Marketing</p>
+
+        </div>
+
+ 
+
+        <div class="section">
+
+            <h2>Roadmap</h2>
+
+            <p>✅ Launch on DEX <br>📢 Social Media Hype <br>🎁 Airdrops & Contests <br>🚀 Moon Mission</p>
+
+        </div>
+
+ 
+
+        <div class="section">
+
+            <h2>Join the Community</h2>
+
+            <a href="#" class="btn">Telegram</a>
+
+            <a href="#" class="btn">Twitter</a>
+
+        </div>
+
+    </div>
+
+ 
+
+    <script>
+
+        function updateCountdown() {
+
+            const launchDate = new Date("2025-03-01T00:00:00").getTime();
+
+            const now = new Date().getTime();
+
+            const diff = launchDate - now;
+
+           
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+           
+
+            document.getElementById("countdown").innerHTML = `Launch in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+           
+
+            if (diff < 0) {
+
+                document.getElementById("countdown").innerHTML = "$KID is Live!";
+
+            }
+
+        }
+
+        setInterval(updateCountdown, 1000);
+
+    </script>
+
+</body>
+
+</html>
